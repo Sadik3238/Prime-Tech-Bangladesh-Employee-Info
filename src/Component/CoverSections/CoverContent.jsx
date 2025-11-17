@@ -22,7 +22,7 @@ const CoverContent = ({ isMenuOpen, menuItems }) => {
                 </div>
             ) : (
                 <div className='px-24 ml-48'>
-                    <h1 className='text-3xl text-yellow-400 font-bold'>
+                    <h1 className='text-3xl text-[#ff6600] font-bold'>
                         INSPIRING PEOPLE TO TAKE <br /> A LEAD IN THEIR LIVES
                     </h1>
 

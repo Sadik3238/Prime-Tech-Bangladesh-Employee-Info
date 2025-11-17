@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from "./Component/Navbar/Navbar.jsx"
 import Cover from './Component/CoverSections/Cover.jsx'
 import CoverContent from './Component/CoverSections/CoverContent.jsx'
+import About from './Component/Abouts/About.jsx';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ function App() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
 
   const menuItems = [
     "Home",
@@ -31,6 +33,7 @@ function App() {
         <Cover isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} menuItems={menuItems} />
         <CoverContent isMenuOpen={isMenuOpen} menuItems={menuItems} />
       </div>
+      <About></About>
     </>
   )
 }
