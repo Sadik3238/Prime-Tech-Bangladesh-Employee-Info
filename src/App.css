@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+@keyframes scroll-down {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.navbar-bg {
+    background: linear-gradient(to bottom, #e5e7eb 0%, #d1d5db 100%);
+    background-size: full;
+}
+
+.cover-section-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cover-section-carousel {
+    /* Ensure the carousel wrapper fills the container */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+}
+
+/* --- 4. Individual Slide/Image Styling --- */
+.image-slide {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hidden-carousel .cover-section-carousel {
+    display: none;
+}
+
+
+body,
+html {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* Ensure no horizontal scrollbar */
+}
